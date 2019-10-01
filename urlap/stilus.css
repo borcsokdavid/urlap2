@@ -1,0 +1,18 @@
+fieldset {
+    width: 30%;
+    text-align: center;
+    margin: auto;
+    background-color: grey;
+    border-style: dotted;
+}
+legend {
+    font-family: consolas;
+    color: green;
+    font-style: italic;
+    margin: auto;
+    text-align: center;
+}
+
+#rejto {
+    visibility: hidden;
+}

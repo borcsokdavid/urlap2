@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <title>ismerkedés az űrlapokkal</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="stilus.css">
+    </head>
+    <body>
+        <form name="urlap" method="GET">
+            <fieldset>
+                <legend>Névfeltőltés</legend>
+                    Vezetéknév:
+                    <input type="text" name="veznev" /> <br />
+                    Keresztnév:
+                    <input type="text" name="kernev" />
+                    <br />
+                    Neme:
+                    <input type="radio" name="sex" value="no" />Nő
+                    <input type="radio" name="sex" value="ferfi" />Férfi <br />
+                    <button type="button" onclick="feldolgoz()">Elküld</button>
+                    <select name="kereszt" size="5" multiple="multiple">
+                        <option value="david">Dávid</option>
+                        <option value="kinga">Kinga</option>
+                        <option value="laci">Laci</option>
+                        <option value="balazs">Balázs</option>
+                        <option value="adam">Ádám</option>
+                        <option value="levente">Levente</option>
+                        <option value="peter">Péter</option>
+                        <option value="tamas">Tamás</option>
+                    </select>
+                    <textarea name="sokszoveg" cols="30" rows="10"></textarea> <br />
+                    <input type="checkbox" name="tel" value="tel">Tél <br />
+                    <input type="checkbox" name="tavasz" value="tavasz">Tavasz <br />
+                    <input type="checkbox" name="nyar" value="nyar">Nyár <br />
+                    <input type="checkbox" name="osz" value="osz">Ősz <br />
+            </fieldset>
+            
+        </form>
+        <div id="rejto">
+            <p>Ide jön a felhasználó neve: <span id="nev"></span></p>
+        </div>
+        <script src="gyak.js"></script>
+    </body>
+</html>
